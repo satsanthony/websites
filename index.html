@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Scraping by Data Scientists</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+h1 {
+    text-align: center;
+    background-color: #e6faff;
+    color: #00ccff;
+  }
+  
+  h2 {
+    color: deeppink;
+  }
+  
+  h4 {
+    color:#660066;
+  }
+  
+  img {
+    box-shadow: 10px 10px 5px black;
+  }
+  
+  section {
+    background-color: #000;
+  }
+  
+  p {
+    font-size: 15px;
+    color: #002633;
+  }
+  
+  ul {
+    border-style: solid;
+    color: gray;
+  }
+  ol {
+    border-style: solid;
+    color: gray;
+  }
+  ol.normal {
+    list-style-type: disc;
+  }
+
+  #olfont {
+    color:#008ae6;
+  }
+  #pfont {
+      color:#cc6600;
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+        <div class="row justify-content-left">
+                <div class="col-md-8">
+                    <h1>How Data Scientists scrape Web Data?</h1>
+                    <h4><em>by Satish Anthony</em></h4>
+                    <br>
+                    </div>
+        </div>
+<div class="row">
+<div class="col-md-12">
+<img class="aligncenter size-large wp-image-983" src="http://www.tryanalyticsblog.com/wp-content/uploads/2019/11/webscrape_main-1024x437.jpg" alt="" width="960" height="410" />
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+</br>
+<p>It is a common practice by most Data Scientists to scrape public/private data that can be used in building their Models. These scraped data augment the presentation of the data in varied forms to the business.
+</p>
+
+<p>
+To begin with, let's review some of the frequently asked questions on Web Scraping:
+</p>
+</div>
+</div>
+<div class="row">
+        <div class="col-md-6">
+<ol class="normal">
+ 	<li  id="olfont">Build your own (BYO) or Rent from others (RTO)?</li>
+ 	<li  id="olfont">What are the pitfalls of BYO?</li>
+ 	<li  id="olfont">Is it ethically right?</li>
+ 	<li  id="olfont">What is the right technology?</li>
+</ol>
+</div>
+</div>
+<div class="row">
+        <div class="col-md-6">
+<h4>BYO or RTO?</h4>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<img class="wp-image-990 size-medium alignleft" src="http://www.tryanalyticsblog.com/wp-content/uploads/2019/11/webscrape2-300x200.jpg" alt="" width="300" height="200" />
+</div>
+<div class="col-md-8">
+<p>Web scraping is primarily utilized by Marketing companies, Real Estate firms (scraping listings data), e-commerce competitive edge, rolling into Data Science at some point. Such services are used for:
+    </p>
+    <ul>
+ 	<li>Target advertising to consumers looking at products such as appliances, automobiles, travel, etc. Data is scraped from consumers through their submission of profiles and other such relevant information. Key is the email information and some kind of metadata that is relevant in their searches</li>
+ 	<li>Compare listings of properties within an area of sale by real estate agents through apps enhanced by scraping these newly listed properties</li>
+ 	<li>Useful in lead generation by scraping contact details</li>
+ 	<li>Retail data for product comparison resulting in increases/reduction of pricing models</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<p>There are companies that sell web scraping subscription models for a cost. It would make more sense in case you do not have the skill-set in-house to build your web scraping models. The typical pricing model from ParseHub is about $499 per month with a total of 120 projects. The annual cost could amount to about $6K plus any customization.
+<br>
+<br>
+The pricing model is listed <a href="https://www.parsehub.com/pricing" target="_blank" rel="noopener noreferrer">here</a>. There are other competitors who can provide similar services ranging from $4K to $10K with size limit, limited data retention times. In short, assuming that you are scraping 5-10 websites, you are looking at a cost of $10K implementation cost plus $1000 per month in maintenance and upkeep.
+
+<h5 id = "pfont">Freelance Web Scrapers charge anywhere between $5 to $30 an hour.
+</h5>
+
+However, if web scraping is your primary method of consumer engagement, it is advisable to have an in-house developer with the skills in open source technologies. Data Analysts can also develop models that can be tweaked and regularly maintained. The data can also be saved in your cloud database. Keep in mind, the website owners consistently change the layouts to prevent web scraping.
+
+So your model that worked last month may not work today. Hence due to the constant adjustment to the web scraping model, BYO makes more sense if you have a cloud-based resource such as Paas or a hybrid cloud.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<h4>So, what are the pitfalls of BYO?</h4>
+<ul>
+ 	<li>The initial setup and product setup could end up being more expensive than budgeted especially developing the model and resolving issues</li>
+ 	<li>The scraped model requires constant upkeep and your developer has to be consistently engaged in the upkeep</li>
+ 	<li>Limiting the scrape to a single or few websites will not help you get everything you need. Many websites miss key elements such as phone numbers, pricing, and reviews. Enhance the experience by including many websites.</li>
+ 	<li>Putting all the scraped together as they come from disparate sites, it involves a lot of rules to be set up upfront and these rules need to be flexible to accommodate future changes.</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+
+<h4>Let's discuss ethics:</h4>
+
+The law by itself to scrape websites is a bit fuzzy and eventually, there would be much reform in this area. The ethics are up to the company investing its resources into developing the web scrapers. Some methods that can be applied:
+<ul>
+ 	<li>Use the scrapped data only to derive new value out of it. Do not duplicate the content and do not save unused data</li>
+ 	<li>Provide developer/company contact info in the code used to scrape the data as a courtesy</li>
+ 	<li>Request/scrape data at a reasonable rate</li>
+ 	<li>Give credit to the sites that you are scraping data from</li>
+ 	<li>If a public API is available, do not pursue scraping from that source</li>
+ 	<li>Check to see if a site has terms of service or terms of use web scraping</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+        <div class="alert alert-primary" role="alert">
+                <h4>What is the right technology? How do Data Scientists Scrape Data?
+                    </h4>
+                </div>
+
+
+<img class="aligncenter size-large wp-image-993" src="http://www.tryanalyticsblog.com/wp-content/uploads/2019/11/webscrape_python-1024x549.jpg" alt="" width="960" height="515" />
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<br>
+<p>As a Data Scientist if you are solving a regression problem of a retail product, a rule of thumb is to identify at least 5 websites/web pages that you would need to scrape initially. Inspect each page and find commonalities using Html tags (Div, Img, or any container elements). These tags can be viewed using the Console Inspect method in Chrome.
+</p>
+<p>Use Anaconda Jupyter Notebook to get all the relevant Python Libraries and these libraries have to be installed in the correct Python environment.
+</p>
+<p>Set up a MongoDB instance either on the cloud or your personal workstation initially. The document-based database is useful to store data in collections that tend to vary.
+</p>
+<p>Use an application such as Flask to present the data that you have scraped from various websites and saved into MongoDB. Ensure that correct CSS is applied using the Bootstrap grid method. This would be needed to present Data Visualization to external customers/clients.
+</p>
+<p>Use the data that is scraped to Train and Test your model. Use Scipy / Scikit-learn packages to leverage the existing algorithm to produce the desired result.
+</p>
+</div>
+</div>
+<div class="row">
+        <div class="col-md-12">
+<p id = "pfont">Summary: Web scraping is a great tool in a Data Scientist's arsenal of Data collection. As seen from this article with few lines of code and understanding the layout of websites, key data points can be scraped which can further be added to your predictive models. Small businesses can leverage this technology to keep them ahead of their competitors. Tech-savvy individuals can build cloud-based commercial web scraping models that can be used as subscription models from consumers using Apps.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<p><h4>Useful URLs:</h4></p>
+<a href="https://towardsdatascience.com/data-science-skills-web-scraping-using-python-d1a85ef607ed
+" target="_blank">A sample web scrape by a Data Scientist</a>
+<br>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
+" target="_blank">A sample web scrape tutorial</a>
+</div>
+</div>
+</div>
+</body>
+</html>
