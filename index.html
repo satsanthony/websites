@@ -12,8 +12,8 @@ h1 {
     color: #00ccff;
   }
   
-  h2 {
-    color: deeppink;
+  h6 {
+    color: #660066;
   }
   
   h4 {
@@ -51,16 +51,20 @@ h1 {
   #pfont {
       color:#cc6600;
   }
+  #rfont {
+    color : red;
+    font-style: oblique;
+  }
 </style>
 </head>
 
 <body>
 <div class="container">
         <div class="row justify-content-left">
-                <div class="col-md-8">
-                    <h1>How Data Scientists scrape Web Data?</h1>
-                    <h4><em>by Satish Anthony</em></h4>
-                    <br>
+                <div class="col-md-12">
+                  <div class="page-header">
+                    <h1>How do Data Scientists Scrape Web Data? <small id="pfont">by Satish Anthony</small></h1>
+                  </div>
                     </div>
         </div>
 <div class="row">
@@ -80,7 +84,7 @@ To begin with, let's review some of the frequently asked questions on Web Scrapi
 </div>
 </div>
 <div class="row">
-        <div class="col-md-6">
+<div class="col-md-6">
 <ol class="normal">
  	<li  id="olfont">Build your own (BYO) or Rent from others (RTO)?</li>
  	<li  id="olfont">What are the pitfalls of BYO?</li>
@@ -88,24 +92,24 @@ To begin with, let's review some of the frequently asked questions on Web Scrapi
  	<li  id="olfont">What is the right technology?</li>
 </ol>
 </div>
-</div>
-<div class="row">
-        <div class="col-md-6">
-<h4>BYO or RTO?</h4>
-</div>
-</div>
-<div class="row">
 <div class="col-md-6">
-<img class="wp-image-990 size-medium alignleft" src="http://www.tryanalyticsblog.com/wp-content/uploads/2019/11/webscrape2-300x200.jpg" alt="" width="300" height="200" />
+  <p>Web scraping is primarily utilized by Marketing companies, Real Estate firms (scraping listings data), e-commerce competitive edge, rolling into Data Science at some point.
+  </p>
+    </div>
 </div>
+<div class="row justify-content-center">
 <div class="col-md-6">
-<p>Web scraping is primarily utilized by Marketing companies, Real Estate firms (scraping listings data), e-commerce competitive edge, rolling into Data Science at some point. Such services are used for:
-    </p>
-  </div>
+    <div class="card" style="width: 18rem;">
+        <img src="http://www.tryanalyticsblog.com/wp-content/uploads/2019/11/webscrape2-300x200.jpg" alt="Web Scrape">
+        <div class="card-body">
+          <p class="card-text"><h6>Build your own (BYO) or Rent from others (RTO)?</h6></p>
+        </div>
+      </div>
 </div>
+</div>
+<br>
 <div class="row">
-    <div class="col-md-12">
-    </br>
+<div class="col-md-12">
     <ul>
  	<li>Target advertising to consumers looking at products such as appliances, automobiles, travel, etc. Data is scraped from consumers through their submission of profiles and other such relevant information. Key is the email information and some kind of metadata that is relevant in their searches</li>
  	<li>Compare listings of properties within an area of sale by real estate agents through apps enhanced by scraping these newly listed properties</li>
@@ -114,6 +118,7 @@ To begin with, let's review some of the frequently asked questions on Web Scrapi
 </ul>
 </div>
 </div>
+
 <div class="row">
 <div class="col-md-12">
 <p>There are companies that sell web scraping subscription models for a cost. It would make more sense in case you do not have the skill-set in-house to build your web scraping models. The typical pricing model from ParseHub is about $499 per month with a total of 120 projects. The annual cost could amount to about $6K plus any customization.
@@ -153,7 +158,7 @@ The law by itself to scrape websites is a bit fuzzy and eventually, there would 
  	<li>Request/scrape data at a reasonable rate</li>
  	<li>Give credit to the sites that you are scraping data from</li>
  	<li>If a public API is available, do not pursue scraping from that source</li>
- 	<li>Check to see if a site has terms of service or terms of use web scraping</li>
+ 	<li id="rfont">Check to see if a site has terms of service or terms of use web scraping</li>
 </ul>
 </div>
 </div>
@@ -173,13 +178,13 @@ The law by itself to scrape websites is a bit fuzzy and eventually, there would 
 <br>
 <p>As a Data Scientist if you are solving a regression problem of a retail product, a rule of thumb is to identify at least 5 websites/web pages that you would need to scrape initially. Inspect each page and find commonalities using Html tags (Div, Img, or any container elements). These tags can be viewed using the Console Inspect method in Chrome.
 </p>
-<p>Use Anaconda Jupyter Notebook to get all the relevant Python Libraries and these libraries have to be installed in the correct Python environment.
+<p>Use <em id="pfont">Anaconda Jupyter Notebook</em> to get all the relevant Python Libraries and these libraries have to be installed in the correct Python environment.
 </p>
-<p>Set up a MongoDB instance either on the cloud or your personal workstation initially. The document-based database is useful to store data in collections that tend to vary.
+<p>Set up a <em id="pfont">MongoDB</em> instance either on the cloud or your personal workstation initially. The document-based database is useful to store data in collections that tend to vary.
 </p>
 <p>Use an application such as Flask to present the data that you have scraped from various websites and saved into MongoDB. Ensure that correct CSS is applied using the Bootstrap grid method. This would be needed to present Data Visualization to external customers/clients.
 </p>
-<p>Use the data that is scraped to Train and Test your model. Use Scipy / Scikit-learn packages to leverage the existing algorithm to produce the desired result.
+<p>Use the data that is scraped to Train and Test your model. Use <em id="pfont">Scipy / Scikit-learn</em> packages to leverage the existing algorithm to produce the desired result.
 </p>
 </div>
 </div>
